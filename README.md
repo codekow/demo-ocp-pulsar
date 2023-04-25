@@ -2,7 +2,11 @@
 
 ## Command Dump
 
+### Links
+
 - https://github.com/datastax/pulsar
+- https://github.com/datastax/pulsar-helm-chart
+- https://github.com/datastax/pulsar-admin-console
 
 ```
 cat << YAML > scratch/dev-values.yaml
@@ -126,7 +130,7 @@ helm install pulsar datastax-pulsar/pulsar -n pulsar -f scratch/dev-values.yaml
 
 ### Errors
 
-dev-values
+Command: `helm install pulsar datastax-pulsar/pulsar -n pulsar -f scratch/dev-values.yaml`
 
 ```
 # kube-prometheus-stack:
@@ -139,7 +143,7 @@ dev-values
 Error: UPGRADE FAILED: error validating "": error validating data: ValidationError(Prometheus.spec): unknown field "hostNetwork" in com.coreos.monitoring.v1.Prometheus.spec
 ```
 
-admin-console
+Deployment / pulsar-adminconsole
 
 ```
 npm ERR! code EACCES
